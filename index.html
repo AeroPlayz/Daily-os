@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daily OS</title>
+<meta name="theme-color" content="#10131A">
+<meta name="description" content="Daily habits, routine and reflection tracker">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<nav id="nav" aria-label="Main">
+  <button data-tab="today"><i>◉</i>Today</button>
+  <button data-tab="week"><i>▦</i>Week</button>
+  <button data-tab="routine"><i>◷</i>Routine</button>
+  <button data-tab="reflect"><i>✎</i>Reflect</button>
+  <button data-tab="data"><i>⇅</i>Data</button>
+</nav>
+<div id="toast" role="status"></div>
+<input type="file" id="importFile" accept="application/json,.json" hidden>
+<script src="script.js"></script>
+</body>
+</html>
